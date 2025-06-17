@@ -1,0 +1,22 @@
+#app {
+  height: 100vh;
+
+  display: grid;
+  grid-template-columns: 25rem 51.25rem;
+  justify-content: center; 
+  gap: 1.25rem;
+}
+
+aside {
+  & .aside-container {
+    background-color: white;
+    height: 100vh;
+  }
+}
+
+main {
+  & .main-container {
+    background-color: bisque;
+    height: 100vh;
+  }
+}

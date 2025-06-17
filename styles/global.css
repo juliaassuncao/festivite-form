@@ -40,6 +40,7 @@
 
   --purple: #B259FF;
   --fuschia: #FF59F9;
+
   --pink: #FF598B;
   --orange: #FF8B59;
   --yellow: #FFCD59;
@@ -50,5 +51,8 @@
 }
 
 body {
-  font: var(--body-md-regular);
+  background-color: var(--shape-background);
+
+  font: var(--body-md);
+  color: var(--text-body);
 }
