@@ -5,6 +5,8 @@
   grid-template-columns: 25rem 51.25rem;
   justify-content: center; 
   gap: 1.25rem;
+
+  overflow: hidden;
 }
 
 aside {
@@ -15,8 +17,9 @@ aside {
 }
 
 main {
+  overflow: auto;
+
   & .main-container {
     background-color: bisque;
-    height: 100vh;
   }
 }

@@ -55,4 +55,6 @@ body {
 
   font: var(--body-md);
   color: var(--text-body);
+
+  overflow: hidden;
 }
