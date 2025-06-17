@@ -20,6 +20,28 @@ aside {
 
     border-radius: 0.75rem;
   }
+
+  & header {
+    padding: 2rem;
+
+    & img {
+      width: 2.86rem;
+      height: 3rem;
+
+      margin-bottom: 1rem;
+    }
+
+    & h1 {
+      font: var(--logo);
+      color: var(--pink);
+
+      margin-bottom: 0.25rem;
+    }
+
+    & p {
+      font-weight: 300;
+    }
+  }
 }
 
 main {
