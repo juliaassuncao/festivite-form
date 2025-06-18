@@ -8,16 +8,34 @@ label {
 input {
   width: 100%;
   border: none;
-  
+  box-sizing: border-box;
+
   outline: 1px solid var(--input-stroke);
   background-color: var(--input-base);
   color: var(--input-placeholder);
-  
+
   padding: 0.8125rem 1rem;
   border-radius: 0.5rem;
+}
+
+input[type="datetime-local"] {
+  text-transform: uppercase;
+  position: relative;
+
+  &::-webkit-calendar-picker-indicator {
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 50%;
+  }
 }
 
 input:focus {
   outline: 1px solid var(--brand-light);
   color: var(--text-heading);
+}
+
+.event-info .flex {
+  gap: 1rem;
 }

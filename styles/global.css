@@ -62,3 +62,7 @@ body {
 .flex {
   display: flex;
 }
+
+.flex-1 {
+  flex: 1;
+}
