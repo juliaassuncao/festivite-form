@@ -52,8 +52,6 @@ main {
     border-radius: 0.75rem;
 
     padding: 5rem 8.125rem;
-
-    height: 100%; /* temporario, apagar depois */
   }
 
   & h1 {
