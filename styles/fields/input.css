@@ -15,6 +15,7 @@ textarea {
 
   outline: 1px solid var(--input-stroke);
   background-color: var(--input-base);
+  font: var(--body-md);
   color: var(--input-placeholder);
 
   padding: 1rem;

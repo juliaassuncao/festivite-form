@@ -1,6 +1,5 @@
 .event-info {
   .radio-wrapper {
-    display: flex;
     height: 3rem;
     justify-content: space-between;
 
@@ -32,7 +31,7 @@
       align-items: center;
       justify-content: center;
       gap: 0.5rem;
-      
+
       font: var(--body-sm);
 
       position: absolute;
@@ -56,4 +55,38 @@
       }
     }
   }
+}
+
+.flex-colors {
+  & input {
+    all: unset;
+  }
+
+  .radio-wrapper {
+    justify-content: space-between;
+  }
+
+  input {
+    width: 1.75rem;
+    height: 1.75rem;
+
+    border-radius: 100%;
+    border: 6px solid var(--shape-button);
+  }
+
+  input:checked {
+    outline: 2px solid var(--brand-light);
+  }
+
+  input#brand-light {background-color: var(--brand-light);}
+  input#navy {background-color: var(--navy);}
+  input#purple {background-color: var(--purple);}
+  input#fuschia {background-color: var(--fuschia);}
+  input#pink {background-color: var(--pink);}
+  input#red {background-color: var(--feedback-danger);}
+  input#orange {background-color: var(--orange);}
+  input#yellow {background-color: var(--yellow);}
+  input#lime {background-color: var(--lime);}
+  input#green {background-color: var(--green);}
+  input#cyan {background-color: var(--cyan);}
 }
