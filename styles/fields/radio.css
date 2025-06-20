@@ -57,40 +57,90 @@
   }
 }
 
-.flex-colors {
-  & input {
-    all: unset;
+.customization {
+  gap: 1.75rem;
+
+  .flex-colors {
+    & input {
+      all: unset;
+    }
+
+    .radio-wrapper {
+      justify-content: space-between;
+    }
+
+    input {
+      width: 1.75rem;
+      height: 1.75rem;
+
+      border-radius: 100%;
+      border: 6px solid var(--shape-button);
+    }
+
+    input:checked {
+      outline: 2px solid var(--brand-light);
+    }
+
+    input:hover {
+      border-color: var(--shape-hover);
+    }
+
+    input#brand-light {background-color: var(--brand-light);}
+    input#navy {background-color: var(--navy);}
+    input#purple {background-color: var(--purple);}
+    input#fuschia {background-color: var(--fuschia);}
+    input#pink {background-color: var(--pink);}
+    input#red {background-color: var(--feedback-danger);}
+    input#orange {background-color: var(--orange);}
+    input#yellow {background-color: var(--yellow);}
+    input#lime {background-color: var(--lime);}
+    input#green {background-color: var(--green);}
+    input#cyan {background-color: var(--cyan);}
   }
 
-  .radio-wrapper {
-    justify-content: space-between;
+  .event-theme {
+
+    .radio-wrapper {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(8.375rem, 1fr));
+      gap: 0.5rem;
+    }
+
+    .radio-inner {
+      background-color: var(--shape-button);
+      outline: 1px solid var(--input-stroke);
+      border-radius: 0.5rem;
+
+      display: grid;
+      justify-items: center;
+      gap: 0.5rem;
+
+      padding: 0.25rem 0.25rem 0 0.25rem;
+
+      position: relative;
+
+      & input,
+      & input:focus,
+      & input:hover {
+        all: unset;
+        position: absolute;
+        inset: 0;
+      }
+
+      & img {
+        border-radius: 0.25rem;
+      }
+
+      &:hover {
+        background-color: var(--shape-hover);
+      }
+
+      & input:checked {
+        outline: 2px solid var(--brand-light);
+        border-radius: 0.5rem;
+      }
+
+
+    }
   }
-
-  input {
-    width: 1.75rem;
-    height: 1.75rem;
-
-    border-radius: 100%;
-    border: 6px solid var(--shape-button);
-  }
-
-  input:checked {
-    outline: 2px solid var(--brand-light);
-  }
-
-  input:hover {
-    border-color: var(--shape-hover);
-  }
-
-  input#brand-light {background-color: var(--brand-light);}
-  input#navy {background-color: var(--navy);}
-  input#purple {background-color: var(--purple);}
-  input#fuschia {background-color: var(--fuschia);}
-  input#pink {background-color: var(--pink);}
-  input#red {background-color: var(--feedback-danger);}
-  input#orange {background-color: var(--orange);}
-  input#yellow {background-color: var(--yellow);}
-  input#lime {background-color: var(--lime);}
-  input#green {background-color: var(--green);}
-  input#cyan {background-color: var(--cyan);}
 }

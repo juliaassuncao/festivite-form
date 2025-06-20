@@ -59,6 +59,11 @@ body {
   overflow: hidden;
 }
 
+img {
+  width: 100%;
+  height: auto;
+}
+
 .flex {
   display: flex;
 }
