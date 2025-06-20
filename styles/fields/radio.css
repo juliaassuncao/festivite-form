@@ -107,7 +107,7 @@
 
     .radio-inner {
       background-color: var(--shape-button);
-      outline: 1px solid var(--input-stroke);
+      border: 1px solid var(--input-stroke);
       border-radius: 0.5rem;
 
       display: grid;
