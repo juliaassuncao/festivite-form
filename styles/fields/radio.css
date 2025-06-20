@@ -78,6 +78,10 @@
     outline: 2px solid var(--brand-light);
   }
 
+  input:hover {
+    border-color: var(--shape-hover);
+  }
+
   input#brand-light {background-color: var(--brand-light);}
   input#navy {background-color: var(--navy);}
   input#purple {background-color: var(--purple);}
