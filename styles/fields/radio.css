@@ -60,7 +60,7 @@
 .customization {
   gap: 1.75rem;
 
-  .flex-colors {
+  .colors-theme {
     & input {
       all: unset;
     }
