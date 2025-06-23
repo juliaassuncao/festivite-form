@@ -12,7 +12,8 @@ button {
 
   margin-left: auto;
 
-  &:hover {
+  &:hover,
+  &:focus {
     background-color: var(--brand-mid);
   }
 }
