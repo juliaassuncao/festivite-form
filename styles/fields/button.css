@@ -1,0 +1,18 @@
+button {
+  all: unset;
+  font-weight: 600;
+  color: var(--text-heading);
+
+  gap: 0.75rem;
+
+  background-color: var(--brand-dark);
+  border-radius: 0.5rem;
+  padding: 0.8125rem 1.25rem;
+  cursor: pointer;
+
+  margin-left: auto;
+
+  &:hover {
+    background-color: var(--brand-mid);
+  }
+}
