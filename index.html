@@ -341,7 +341,7 @@
                 <div class="input-wrapper flex-1">
                   <label for="style">Estilo</label>
 
-                  <div class="checkbox-wrapper flex">
+                  <div class="switch-wrapper flex">
                     <input type="checkbox" name="style" id="style" checked />
                     <label class="switch" for="style">
                       <span class="slider"></span>
@@ -403,9 +403,18 @@
               <!-- === NOME === -->
               <div class="input-wrapper">
                 <label for="name">Nome</label>
-                <input type="text" name="name" id="name" placeholder="Nome completo" required>
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  placeholder="Nome completo"
+                  required
+                />
                 <div class="error flex">
-                  <img src="assets/icons/circle-alert.svg" alt="Ícone de alerta">
+                  <img
+                    src="assets/icons/circle-alert.svg"
+                    alt="Ícone de alerta"
+                  />
                   <span>Campo obrigatório</span>
                 </div>
               </div>
@@ -413,12 +422,52 @@
               <div class="flex gap-16">
                 <div class="input-wrapper flex-1">
                   <label for="email">E-mail</label>
-                  <input type="email" name="email" id="email" placeholder="exemplo@email.com">
+                  <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    placeholder="exemplo@email.com"
+                  />
                 </div>
-                
+
                 <div class="input-wrapper flex-1">
                   <label for="phone">Telefone</label>
-                  <input type="number" name="phone" id="phone" placeholder="(99) 99999-9999 ">
+                  <input
+                    type="number"
+                    name="phone"
+                    id="phone"
+                    placeholder="(99) 99999-9999 "
+                  />
+                </div>
+              </div>
+            </fieldset>
+
+            <!-- === TERMOS E CONDIÇÕES === -->
+            <fieldset class="terms">
+              <div class="terms-wrapper">
+                <div class="checkbox-wrapper flex">
+                  <div class="checkbox-image"></div>
+                  <input type="checkbox" name="terms" id="terms" required />
+                  <label for="terms"
+                    >Li e concordo com os <a href="#">Termos e Condições</a> e
+                    com a <a href="#"> Política de Privacidade</a></label
+                  >
+                </div>
+
+                <div class="checkbox-wrapper flex">
+                  <div class="checkbox-image"></div>
+                  <input type="checkbox" name="terms" id="terms" />
+                  <label for="terms"
+                    >Aceito receber atualizações e promoções por e-mail</label
+                  >
+                </div>
+
+                <div class="checkbox-wrapper flex">
+                  <div class="checkbox-image"></div>
+                  <input type="checkbox" name="terms" id="terms" />
+                  <label for="terms"
+                    >Aceito receber atualizações e promoções por SMS</label
+                  >
                 </div>
               </div>
             </fieldset>
